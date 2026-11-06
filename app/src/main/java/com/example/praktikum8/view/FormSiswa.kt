@@ -18,12 +18,12 @@ import com.example.praktikum8.R
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun FormSiswa(
-    //edit 1 : parameter pilihanJK dan onSubmitButtonClicked
+
     pilihanJK: List<String>,
     onSubmitButtonClicked: (MutableList<String>) -> Unit,
     modifier: Modifier = Modifier
 ){
-    //edit 2 : tambahkan 4 variable dibawah ini
+
     var txtNama by rememberSaveable { mutableStateOf("") }
     var txtAlamat by remember { mutableStateOf("") }
     var txtGender by remember { mutableStateOf("") }
@@ -40,7 +40,7 @@ fun FormSiswa(
             verticalArrangement = Arrangement.SpaceBetween,
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
-            //edit 3 : value, onValueChange, selected,onClick
+
             OutlinedTextField(
                 value = txtNama,
                 singleLine = true,
